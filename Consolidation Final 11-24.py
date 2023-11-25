@@ -9,7 +9,7 @@ def shift(character, step, encrypt=True):
             shifted_offset = (change + step) % 26
         else:
             shifted_offset = (change - step + 26) % 26 #I had issues making sure my code works for all letters and wrapping around the alphabet, so I talked to one of my friends outside of class and he recommended mod 26
-        return chr(shifted_offset + original) #learned from https://www.programiz.com/python-programming/methods/built-in/chr
+        return chr(shifted_offset + original) - #learned from https://www.programiz.com/python-programming/methods/built-in/chr
     return character
 
 #concatenate the encrypted/decrypted characters
