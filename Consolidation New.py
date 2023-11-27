@@ -3,7 +3,7 @@ import sys
 #decrypt or encrypt the string(s)
 def shift(character, step, encrypt=True):
     if character.isalpha(): #learned from https://www.w3schools.com/python/ref_string_isalpha.asp
-        original = ord("A") if character.isupper() else ord("a") #Learned to set alphabet at A from a more experienced friend outside of class and learned from https://www.w3schools.com/python/ref_func_ord.asp
+        original = ord("A") if character.isupper() else ord("a") #Learned to set alphabet at A from a more experienced friend outside of class and I learned from https://www.w3schools.com/python/ref_func_ord.asp
         change = ord(character) - original
         if encrypt:
             shifted_offset = (change + step) % 26
