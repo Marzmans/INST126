@@ -1,10 +1,10 @@
 """Documentation: run program like python, make sure to have Consolidation_functions in the same directory
- "Consolidation New.py" (encrypt/decrypt) (step) (string1) (string2)"""
+ Consolidation New.py" (encrypt/decrypt) (step) (string1) (string2)"""
 import sys
 import Consolidation_functions
 
 #main section of code to combine other functions to achieve desired outcome
-encrypt = ["encrypt", "decrypt"]
+encrypt = []
 def main():
     try:
         mode = sys.argv[1].lower()
@@ -19,3 +19,4 @@ def main():
         print(r'Run the program like this: python "Consolidation New.py" (encrypt/decrypt) (step) (string1) (string2) ...')
 
 main()
+www
