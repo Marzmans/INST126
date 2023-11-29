@@ -1,16 +1,21 @@
+"""Documentation: run program like python, make sure to have Consolidation_functions in the same directory
+ "Consolidation New.py" (encrypt/decrypt) (step) (string1) (string2)"""
 import sys
-#create step
-#step = int(sys.argv[1])
-#user_str = sys.argv[2]
+import Consolidation_functions
 
-def caesar(input = sys.argv[1],step = sys.argv[2]):
-    
-    
+#main section of code to combine other functions to achieve desired outcome
+encrypt = ["encrypt", "decrypt"]
+def main():
+    try:
+        mode = sys.argv[1].lower()
+        if mode not in encrypt: #troubleshooting if someone does not provide the correct inputs
+            raise ValueError("Input encrypt or decrypt")
+        step = int(sys.argv[2])
+        strings = sys.argv[3:]
+        for i in strings:
+            result = Consolidation_functions.caesar(i, step, encrypt=(mode == "encrypt"))
+            print("{}ed: {}.".format(sys.argv[1], result))
+    except (ValueError, IndexError): #learned how to handle multiple possible errors from https://rollbar.com/blog/python-catching-multiple-exceptions/
+        print(r'Run the program like this: python "Consolidation New.py" (encrypt/decrypt) (step) (string1) (string2) ...')
 
-
-for arg in sys.argv[1:]:
-    str_list.append(arg)
-    
-#for sysarg in range(len(1, sys.argv)): #used online documentation to use len to skip the script name when iterating over standard args
- #   #print ("sys.argv[{}]: {}".format(sysarg, sys.argv[sysarg]))
-  #  sysarg[1]
+main()
