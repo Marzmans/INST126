@@ -30,6 +30,6 @@ def main():
             result = caesar(i, step, encrypt=(mode == "encrypt"))
             print("{}ed: {}.".format(sys.argv[1], result))
     except (ValueError, IndexError): #learned how to handle multiple possible errors from https://rollbar.com/blog/python-catching-multiple-exceptions/
-        print("Run the program like this: python 'Consolidation New.py' (encrypt/decrypt) (step) (string1) (string2) ...")
+        print(r'Run the program like this: python "Consolidation New.py" (encrypt/decrypt) (step) (string1) (string2) ...')
 
 main()
