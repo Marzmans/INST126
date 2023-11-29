@@ -18,10 +18,11 @@ def caesar(input, step, encrypt=True):
     return "".join(shift(character, step, encrypt) for character in input) #learned from https://stackoverflow.com/questions/12453580/how-to-concatenate-join-items-in-a-list-to-a-single-string
 
 #main section of code to combine other functions to achieve desired outcome
+encrypt = ["encrypt", "decrypt"]
 def main():
     try:
         mode = sys.argv[1].lower()
-        if mode not in ["encrypt", "decrypt"]: #troubleshooting if someone does not provide the correct inputs
+        if mode not in encrypt: #troubleshooting if someone does not provide the correct inputs
             raise ValueError("Inout encrypt or decrypt")
         step = int(sys.argv[2])
         strings = sys.argv[3:]
