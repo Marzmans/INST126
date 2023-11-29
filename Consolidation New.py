@@ -1,4 +1,4 @@
-#Documentation: run program python 'Consolidation New.py' (encrypt/decrypt) (step) (string1) (string2)
+#Documentation: run program like python 'Consolidation New.py' (encrypt/decrypt) (step) (string1) (string2)
 import sys
 
 #decrypt or encrypt the string(s)
@@ -23,7 +23,7 @@ def main():
     try:
         mode = sys.argv[1].lower()
         if mode not in encrypt: #troubleshooting if someone does not provide the correct inputs
-            raise ValueError("Inout encrypt or decrypt")
+            raise ValueError("Input encrypt or decrypt")
         step = int(sys.argv[2])
         strings = sys.argv[3:]
         for i in strings:
