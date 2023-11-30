@@ -14,8 +14,8 @@ def main():
         type.append(sys.argv[1].lower())
         if type[0] not in ["encrypt", "decrypt"]: #learned not in from https://www.askpython.com/python/examples/in-and-not-in-operators-in-python
             raise ValueError("Input encrypt or decrypt")
-
-        final_type = type.pop(0)
+        else:
+            final_type = type.pop(0)
 
         step = int(sys.argv[2])
 
