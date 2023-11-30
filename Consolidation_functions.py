@@ -1,8 +1,5 @@
 #Functions to use in caesar cipher project
-import os
-import sys
 
-#os.getcwd()
 #decrypt or encrypt the string(s)
 def shift(character, step, encrypt=True):
     if character.isalpha(): #learned from https://www.w3schools.com/python/ref_string_isalpha.asp

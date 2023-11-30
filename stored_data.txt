@@ -1,1 +1,1 @@
-{'hi': {'Original String: ': 'hi', 'Decrypted String: ': 'de'}, 'rjigr': {'Original String: ': 'rjigr', 'Decrypted String: ': 'nfecn'}, 'ee': {'Original String: ': 'ee', 'Decrypted String: ': 'aa'}}
+{'inst2323': {'Original String: ': 'inst2323', 'Encrypted String: ': 'lqvw2323'}}
